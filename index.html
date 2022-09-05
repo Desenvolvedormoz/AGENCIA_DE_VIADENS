@@ -15,8 +15,9 @@
     </header>
     <main>
         <section>
+        <img src="./assets/imagens/bahia.jpg">
         <div>
-            <div><img src="./assets/imagens/local.png" alt=""><p>Solicite um orçamento</p></div>
+            <div><img src="./assets/imagens/aviao.png" alt=""><p>Solicite um orçamento</p></div>
          <div>
             <h2>Informe os seus dados</h2>
           <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
@@ -40,10 +41,19 @@
 
             <div>
             <label for="origem">Oragem</label>
-            <input type="text" id="origem">
+            <select name="origem" id="origem">
+                <option value="none">----</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de janeiro</option>
+            </select>
 
-            <label for="destino">Oragem</label>
-            <input type="text" id="destino">
+
+            <label for="destino">Destino</label>
+            <select name="destino" id="destino">
+                <option value="none">----</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de janeiro</option>
+            </select>
             </div>
         </div>
             <p>Quarto com cama infantil?</p>
@@ -126,7 +136,34 @@
     </main>
     <footer>
         <div>
-
+            <div>
+                <div>
+                    <img src="./assets/imagens/local.png" alt="Rj">
+                    <p>Rio de janeiro - RJ</p>
+                </div>
+                <div>
+                    <img src="./assets/imagens/telefone.png" alt=""Telefone>
+                    <p>Telefone: (21) 99999 - 9999</p>
+                </div>
+                <div>
+                    <img src="./assets/imagens/email.png" alt="Email">
+                    <p>emai: contato@agencia.com.br</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="./assets/imagens/fb.png" alt="Facebook">
+                    <p>\AgenciaDeViagem</p>
+                </div>
+                <div>
+                    <img src="./assets/imagens/ig.png" alt="Istagram">
+                    <p>@AgenciaDeViagem</p>
+                </div>
+                <div>
+                    <img src="./assets/imagens/tt.png" alt="Twiter">
+                    <p>@AgenciaDeViagem</p>
+                </div>
+            </div>
         </div>
     </footer>
 </body>
