@@ -8,3 +8,8 @@ body {
     background-color: #80808029;
     font-family: 'Raleway';
 }
+
+header img {
+    width: 32px;
+    height: 32px;
+}
