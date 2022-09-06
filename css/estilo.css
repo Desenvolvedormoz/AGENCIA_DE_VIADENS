@@ -12,7 +12,7 @@ body {
 main {
     width: 100%;
     height:max-content;
-    margin-bottom: 32px;
+    margin-bottom: 50px;
 }
 
 header img {
@@ -118,9 +118,7 @@ section {
     padding: 0 5px;
 }
 
-.container_form .data_ida_volta {
-    max-width: 500px;
-}
+ 
 
 .container_dentro_do_formulario {
     display: flex;
@@ -130,13 +128,22 @@ section {
     height: auto;
 }
 
-.container_dentro_do_formulario select {
-    width: 500px;
+.data_ida_volta {
+    width: calc(50% - 10px);
+}
+
+.container_dentro_do_formulario .data_ida_volta {
+    width: calc(50% -10px);
+}
+
+select {
+    width: 100%;
 }
 
 .input_radio_checkbox {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .input_radio_checkbox div {
@@ -276,8 +283,9 @@ section {
 }
 
 #natureza {
-    height: auto;
-    border: 4px solid #5d15d1;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 155px;
 }
 
 .descricao {
@@ -330,3 +338,96 @@ footer {
     width: 18px;
 }
  
+.estiliza_div p {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+@media(max-width: 1100px){
+    .limite_da_largura {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    [type="submit"] {
+        width: 100%;
+    }
+
+    .container_de_imagem {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .img_pequeno {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .primeira_imagem_container {
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+    }
+
+    .img_imagem {
+        width: 100%;
+        height: 100%;
+    }
+
+    #natureza {
+        margin-bottom: 150px;
+    }
+
+    .primeira_imagem_container_dentro_dele {
+        width: 100%;
+        height: 225px;
+        margin-top: 15px;
+
+    }
+
+    .div_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estiliza_div {
+        width: 250px;
+    }
+}
+
+@media(max-width: 540px){
+    .container_dentro_do_formulario{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .data_ida_volta {
+        width: 100%;
+    }
+
+    .input_radio_checkbox {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .input_radio_checkbox span , div {
+        width: 100%;
+    }
+
+    .check {
+        margin-left: 0;
+    }
+
+   .input_radio_checkbox div #nao {
+        margin-left: 0;
+    }
+    }

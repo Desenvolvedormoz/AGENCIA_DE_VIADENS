@@ -23,41 +23,40 @@
             <h2>Informe os seus dados</h2>
           <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
             <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome">
-
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" placeholder="Digite o emal no formato: exemplo@exempo.com" required>
 
             <label for="celular">Celular</label>
-            <input type="tel:" id="celular">
+            <input type="tel" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx" required>
 
         <div class="container_dentro_do_formulario">
             <div class="data_ida_volta">
             <label for="data">Data da Ida</label>
-            <input type="date" id="data">
+            <input type="date" name="partida" value="data" id="data" required>
 
             <label for="data_volta">Data de volta</label>
-            <input type="date" id="data_volta">
+            <input type="date" name="chegada" value="" id="data_volta" required>
             </div>
 
             <div class="data_ida_volta">
-            <span>
+            <div class="origem">
             <label for="origem">Origem</label>
-            <select name="origem" id="origem">
+            <select name="origem" id="origem" required>
                 <option >Partindo de</option>
                 <option value="SP">São Paulo</option>
                 <option value="RJ">Rio de janeiro</option>
             </select>
-            </span>
-
-            <span>
+        </div>
+          
+            <div class="origem">
             <label for="destino">Destino</label>
-            <select name="destino" id="destino">
+            <select name="destino" id="destino" required>
                 <option >Indo para</option>
                 <option value="SP">São Paulo</option>
                 <option value="RJ">Rio de janeiro</option>
             </select>
-           </span>
+        </div>
             </div>
         </div>
 
@@ -66,12 +65,13 @@
         <div class="input_radio_checkbox">
              <div>
             <label for="sim">Sim</label>
-            <input type="radio" name="sim" value="sim" id="sim"> 
+            <input type="radio" name="infantil" value="sim" id="sim"> 
            </div>
            <div>
             <label for="nao">Não</label>
-            <input type="radio" id="nao" value="nao" name="sim">
+            <input type="radio" id="nao" value="nao" name="infantil">
             </div>
+
         </div>
         </div>
             <p>Preferências da Hospedagem</p>
@@ -79,19 +79,19 @@
         <div class="input_radio_checkbox"> 
             <span>
             <label for="piscina">Piscina</label>
-            <input type="checkbox" value="piscina" name="piscina" id="piscina">
+            <input type="checkbox" value="piscina" name="preferencias[]" id="piscina">
             </span>
              <span class="check">
             <label for="wifi">Wifi</label>
-            <input type="checkbox" name="wi-Fi" id="wifi">
+            <input type="checkbox" value="wifi" name="preferencias[]" id="wifi">
             </span>
              <span class="check">
             <label for="garagem">Garagem</label>
-            <input type="checkbox" name="garagem" id="garagem">
+            <input type="checkbox" value="garagem" name="preferencias[]" id="garagem">
             </span>
              <span class="check">
             <label for="suite">Suite</label>
-            <input type="checkbox" name="suite" id="suite">
+            <input type="checkbox" value="suite" name="preferencias[]" id="suite">
             </span>
         </div> 
 
@@ -155,6 +155,7 @@
     <footer>
         <div class="limite_da_largura div_footer">
             <div class="estiliza_div">
+                <h3>Contato</h3>
                 <div>
                     <img src="./assets/imagens/local.png" alt="Rj">
                     <p>Rio de janeiro - RJ</p>
@@ -169,6 +170,7 @@
                 </div>
             </div>
             <div class="estiliza_div">
+                <h3>Nossas Redes sociais</h3>
                 <div>
                     <img src="./assets/imagens/fb.png" alt="Facebook">
                     <p>\AgenciaDeViagem</p>
