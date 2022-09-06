@@ -10,17 +10,16 @@
 </head>
 <body>
     <header>
-    <div>
+    <div class="limite_da_largura">
         <img src="./assets/imagens/local-logo.png" alt="logo">
         <p>Agência de viagens</p>
     </div>
     </header>
     <main>
-        <section>
-        <img src="./assets/imagens/bahia.jpg">
-        <div>
-            <div><img src="./assets/imagens/aviao.png" alt=""><p>Solicite um orçamento</p></div>
-         <div>
+        <section class="secao_capa">
+        <div class="limite_da_largura">
+            <div id="agrupa_titulo"><img src="./assets/imagens/aviao.png" alt=""><p>Solicite um orçamento</p></div>
+         <div class="container_form">
             <h2>Informe os seus dados</h2>
           <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
             <label for="nome">Nome:</label>
@@ -32,8 +31,8 @@
             <label for="celular">Celular</label>
             <input type="tel:" id="celular">
 
-        <div>
-            <div>
+        <div class="container_dentro_do_formulario">
+            <div class="data_ida_volta">
             <label for="data">Data da Ida</label>
             <input type="date" id="data">
 
@@ -41,25 +40,30 @@
             <input type="date" id="data_volta">
             </div>
 
-            <div>
-            <label for="origem">Oragem</label>
+            <div class="data_ida_volta">
+            <span>
+            <label for="origem">Origem</label>
             <select name="origem" id="origem">
-                <option value="none">----</option>
+                <option >Partindo de</option>
                 <option value="SP">São Paulo</option>
                 <option value="RJ">Rio de janeiro</option>
             </select>
+            </span>
 
-
+            <span>
             <label for="destino">Destino</label>
             <select name="destino" id="destino">
-                <option value="none">----</option>
+                <option >Indo para</option>
                 <option value="SP">São Paulo</option>
                 <option value="RJ">Rio de janeiro</option>
             </select>
+           </span>
             </div>
         </div>
-            <p>Quarto com cama infantil?</p>
+
         <div>
+            <p>Quarto com cama infantil?</p>
+        <div class="input_radio_checkbox">
              <div>
             <label for="sim">Sim</label>
             <input type="radio" name="sim" value="sim" id="sim"> 
@@ -69,22 +73,23 @@
             <input type="radio" id="nao" value="nao" name="sim">
             </div>
         </div>
+        </div>
             <p>Preferências da Hospedagem</p>
               
-        <div> 
+        <div class="input_radio_checkbox"> 
             <span>
             <label for="piscina">Piscina</label>
             <input type="checkbox" value="piscina" name="piscina" id="piscina">
             </span>
-           <span>
-            <label for="wifi">Wi-Fi</label>
+             <span class="check">
+            <label for="wifi">Wifi</label>
             <input type="checkbox" name="wi-Fi" id="wifi">
             </span>
-             <span>
+             <span class="check">
             <label for="garagem">Garagem</label>
             <input type="checkbox" name="garagem" id="garagem">
             </span>
-             <span>
+             <span class="check">
             <label for="suite">Suite</label>
             <input type="checkbox" name="suite" id="suite">
             </span>
@@ -94,51 +99,62 @@
         </form>
     </div>
         </section>
-        <section>
+        <section class="limite_da_largura  centralisar_texto ">
             <h3>Ofertas</h3>
-            <p>Ofertas com até 50% de desconto</p>
-            <figure>
+            <p>Ofertas com até <span>50%</span> de desconto</p>
+            <div class="limite_da_largura container_de_imagem">
+            <figure class="primeira_imagem_container img_grande">
                 <img src="./assets/imagens/rio.jpg" alt="">
                 <figcaption>Rio de Janeiro</figcaption>
             </figure>
-            <div>
-                <figure>
-                <img src="./assets/imagens/manaus.jpg" alt="">
+            <div class="img_pequeno">
+                <figure class="primeira_imagem_container_dentro_dele">
+                <img class="img_imagem" src="./assets/imagens/manaus.jpg" alt="Manaus">
                 <figcaption>Manaus</figcaption>
                 </figure>
-                <figure>
-                <img src="./assets/imagens/saopaulo.jpg" alt="">
+                <figure class="primeira_imagem_container_dentro_dele">
+                <img class="img_imagem" src="./assets/imagens/saopaulo.jpg" alt="">
                 <figcaption>São Paulo</figcaption>
                 </figure>
-                <figure>
-                    <img src="./assets/imagens/niteroi.jpg" alt="">
+                <figure class="primeira_imagem_container_dentro_dele">
+                    <img class="img_imagem" src="./assets/imagens/niteroi.jpg" alt="">
                     <figcaption>Rio de Janeiro</figcaption>
                 </figure>
-                <figure>
-                    <img src="./assets/imagens/maranhao.jpg" alt="">
+                <figure class="primeira_imagem_container_dentro_dele">
+                    <img class="img_imagem" src="./assets/imagens/maranhao.jpg" alt="">
                     <figcaption>Maranhão</figcaption>
                 </figure>
             </div>
         </div>
+    </div>
         </section>
-        <section>
+        <section  id="natureza">
+            <div class="limite_da_largura centralisar_texto ">
             <h3>Explore a Naturesa</h3>
             <p>Viaje conosco e veja o melhor que a natureza tem a lhe oferecer</p>
-              <figure>
+
+            <div class="container_de_imagem">
+              <figure class="primeira_imagem_container">
                 <img src="./assets/imagens/lencol.jpg" alt="Lensol">
+                <div class="descricao">
                 <h3>Lensois Maranhão - brasil</h3>
                 <p>Ida e volta a partiar de R$ 79</p>
+                </div>
               </figure>
-              <figure>
+              <figure class="primeira_imagem_container">
                 <img src="./assets/imagens/goias.jpg" alt="">
+                <div class="descricao">
                 <h3>Cachoeira Santa Bárbara - Brasil</h3>
                 <p>Ida e volta R$ 139</p>
+                </div>
               </figure>
+            </div>
+        </div>
         </section>
     </main>
     <footer>
-        <div>
-            <div>
+        <div class="limite_da_largura div_footer">
+            <div class="estiliza_div">
                 <div>
                     <img src="./assets/imagens/local.png" alt="Rj">
                     <p>Rio de janeiro - RJ</p>
@@ -152,7 +168,7 @@
                     <p>emai: contato@agencia.com.br</p>
                 </div>
             </div>
-            <div>
+            <div class="estiliza_div">
                 <div>
                     <img src="./assets/imagens/fb.png" alt="Facebook">
                     <p>\AgenciaDeViagem</p>

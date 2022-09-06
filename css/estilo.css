@@ -9,7 +9,324 @@ body {
     font-family: 'Raleway';
 }
 
+main {
+    width: 100%;
+    height:max-content;
+    margin-bottom: 32px;
+}
+
 header img {
     width: 32px;
     height: 32px;
 }
+
+header {
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header>div>p{
+    font-size: 24px;
+    color: #5d15d1;
+    margin-left: 10px;
+}
+
+.limite_da_largura {
+    max-width: 1024px;
+    margin: auto;
+}
+
+section {
+    width: 100%;
+    height: auto;
+}
+
+.secao_capa {
+ background-image: url("../assets/imagens/bahia.jpg");
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ width: 100%;
+ height: 100%;
+}
+
+.secao_capa .limite_da_largura {
+    padding: 50px 0;
+    width: 100%;
+    height: auto;
+}
+
+#agrupa_titulo {
+    width: 100%;
+    height: 35px;
+    background-color: #5d15d1;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#agrupa_titulo img {
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+}
+
+#agrupa_titulo p{
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.container_form {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px 25px 20px;
+}
+
+.container_form h2 {
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+.container_form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_form form label , p{
+    font-size: 16px;
+}
+
+.container_form input, select {
+    height: 32px;
+    margin: 10px 0;
+    width: 100%;
+    padding: 0 5px;
+}
+
+.container_form .data_ida_volta {
+    max-width: 500px;
+}
+
+.container_dentro_do_formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.container_dentro_do_formulario select {
+    width: 500px;
+}
+
+.input_radio_checkbox {
+    display: flex;
+    flex-direction: row;
+}
+
+.input_radio_checkbox div {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 120px;
+    justify-content: start;
+}
+
+.input_radio_checkbox div #nao {
+    margin-left: 20px;
+}
+
+.input_radio_checkbox span {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: start;
+    width: 120px;
+}
+
+.input_radio_checkbox [type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.input_radio_checkbox [type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.check {
+    margin-left: 20px;
+}
+
+[type="submit"] {
+    width: 160px;
+    height: 32px;
+    background-color: #5d15d1;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 2px #939393;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 12px;
+}
+
+.centralisar_texto {
+    margin-top: 32px;
+    margin-bottom: 0;
+}
+
+.centralisar_texto h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.centralisar_texto p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.centralisar_texto span {
+    font-weight: bold;
+}
+
+.container_de_imagem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 375px;
+    margin-bottom: 0;
+}
+
+.primeira_imagem_container {
+    width: calc(50% - 10px);
+    height: 100%;
+    position: relative;
+}
+
+.primeira_imagem_container figcaption {
+    width: 100%;
+    font-size: 17px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,50%);
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.primeira_imagem_container img {
+    width: 100%;
+    height: 100%;
+}
+
+.img_pequeno {
+    width: calc(50% - 10px);
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primeira_imagem_container_dentro_dele {
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+    position: relative;
+    margin: 3px;
+}
+
+.primeira_imagem_container_dentro_dele figcaption {
+    position: absolute;
+    font-size: 17px;
+    background-color: rgba(0,0,0,50%);
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+}
+
+.img_imagem {
+    width:  100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+#natureza {
+    height: auto;
+    border: 4px solid #5d15d1;
+}
+
+.descricao {
+    padding: 20px;
+    background-color: #fff;
+    margin: 0;
+}
+
+.descricao h3 {
+    font-size: 16px;
+}
+
+.descricao p {
+    color: grey;
+    margin-top: 15px;
+}
+
+footer {
+    width: 100%;
+    background-color: #5d15d1;
+    margin-top: 32px;
+    color: #fff;
+}
+
+.div_footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.estiliza_div {
+   display: flex;
+   flex-direction: column;
+   margin: 15px 0;
+}
+
+.estiliza_div h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.estiliza_div div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.estiliza_div div> img {
+    width: 18px;
+}
+ 
